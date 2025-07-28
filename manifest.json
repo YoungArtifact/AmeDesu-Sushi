@@ -1,0 +1,11 @@
+{
+   "Name": "AmeDesu's Sushi",
+   "Author": "AmeDesu/YoungArtifact",
+   "Version": "1.0.0",
+   "Description": "Adds the beloved cat Sushi to the game!",
+   "UniqueID": "YoungArtifact.Sushi",
+   "UpdateKeys": [ ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   },
+}

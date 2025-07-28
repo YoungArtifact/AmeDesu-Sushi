@@ -1,0 +1,48 @@
+{
+
+  "Format": "2.0.0",
+  
+  "ConfigSchema": {
+	  "Cat Breeds": {
+		  "AllowValues": "Sushi",
+		  "AllowMultiple": true,
+		  "Default": "Sushi"},
+    },
+	
+	
+  "Changes": [
+    //Sushi
+    {
+      "LogName": "Sushi",
+      "Action": "EditData",
+      "Target": "Data/Pets",
+	  "TargetField": [ "Cat", "Breeds" ],
+      "Entries": {
+      "YoungArtifact.Sushi.Sushi": {
+		"Id": "YoungArtifact.Sushi.Sushi",
+			"Texture": "Mods\\YoungArtifact.Sushi\\Sushi",
+			"IconTexture": "Mods\\YoungArtifact.Sushi\\icons",
+			"IconSourceRect": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 16
+				},
+			"BarkOverride": null,
+			"VoicePitch": 1.0
+			},
+		},
+      "When": { "Cat Breeds": "Sushi" },
+    },
+	
+	
+    //Load Images
+    {
+      "LogName": "Load images",
+      "Action": "Load",
+      "Target": "Mods\\YoungArtifact.Sushi\\Sushi, Mods\\YoungArtifact.Sushi\\icons",
+      "FromFile": "assets/{{TargetWithoutPath}}.png"
+    },
+	
+]
+}
